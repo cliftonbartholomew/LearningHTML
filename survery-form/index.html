@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 id="title">Registration Form</h1>
+      <p id="description">
+        Please use the following form to register your Dota team
+      </p>
+    </header>
+
+    <form id="survey-form" action="https://register-demo.freecodecamp.org">
+      <div class="form-group">
+        <label id="name-label" for="name">Enter your team name: </label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          placeholder="Team name..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Enter your team email: </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          placeholder="Team email..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number">
+          Enter the number of players you have:
+        </label>
+        <input
+          id="number"
+          name="number"
+          type="number"
+          required
+          min="5"
+          max="10"
+          placeholder="Team count..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="file-label" for="file">Upload team logo: </label>
+        <input id="file" name="file" type="file" />
+      </div>
+
+      <hr />
+      <div class="form-group">
+        <label id="dropdown-label" for="dropdown">
+          How many years has your team played in tournaments?
+        </label>
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label id="level-label" for="level">
+          What is the highest level your team has achieved?
+        </label>
+        <label id="pubs-label" for="pubs">
+          <input
+            class="inline"
+            id="pubs"
+            name="level"
+            type="radio"
+            checked
+            value="pubs"
+          />
+          Pubs
+        </label>
+        <label id="regional-label" for="regional">
+          <input
+            class="inline"
+            id="regional"
+            name="level"
+            type="radio"
+            value="regional"
+          />
+          Regional
+        </label>
+        <label id="national-label" for="national">
+          <input
+            class="inline"
+            id="national"
+            name="level"
+            type="radio"
+            value="national"
+          />
+          National
+        </label>
+      </div>
+
+      <hr />
+      <div class="form-group">
+        <label id="position-label" for="position">
+          What is your team looking for?
+        </label>
+        <label id="mid-label" for="mid">
+          <input
+            class="inline"
+            id="mid"
+            name="position"
+            type="checkbox"
+            value="mid"
+          />Mid Player
+        </label>
+        <label id="carry-label" for="carry">
+          <input
+            class="inline"
+            id="carry"
+            name="position"
+            type="checkbox"
+            value="carry"
+          />
+          Carry Player
+        </label>
+
+        <label id="hard-support-label" for="hard-support">
+          <input
+            class="inline"
+            id="hard-support"
+            name="position"
+            type="checkbox"
+            value="hard-support"
+          />
+          Hard-support Player
+        </label>
+
+        <label id="support-label" for="support">
+          <input
+            class="inline"
+            id="support"
+            name="position"
+            type="checkbox"
+            value="support"
+          />
+          Support Player
+        </label>
+
+        <label id="offlane-label" for="offlane">
+          <input
+            class="inline"
+            id="offlane"
+            name="position"
+            type="checkbox"
+            value="offlane"
+          />
+          Offlane Player
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label id="qualities-label" for="qualities">
+          What are you looking for in a player?
+        </label>
+        <textarea
+          id="qualities"
+          name="qualities"
+          placeholder="We are looking for ..."
+          rows="10"
+          cols="40"
+        ></textarea>
+      </div>
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>
